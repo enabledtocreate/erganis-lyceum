@@ -29,6 +29,7 @@
 | **L-N3** | Nomodeion | Sustainability & wellness | LEED (GA, AP ID+C), **WELL AP** tracks | L-N0 |
 | **L-N4** | Nomodeion | Extended tracks | Accessibility certs, Fitwel, EDAC, LC, NKBA (tier 2) | L-N0 |
 | **L-N5** | Nomodeion | Studio / Build links | Cross-link to Build Codes/Standards on project apply | Studio S-B2/S-B4 |
+| **L-Notes1** | Notes (Lyceum) | Study guides, personal notes via `erganis.notes` | Notes N1+, L-M1 |
 
 ```mermaid
 flowchart TB
@@ -43,7 +44,11 @@ flowchart TB
   Lyceum --> Core
   Mnemosyne --> Studio
   Nomodeion --> Studio
+  NotesMod[erganis-notes] --> Lyceum
+  NotesMod --> Studio
 ```
+
+**Notes:** Lyceum consumes the shared **`erganis-notes`** module ([`NOTES-ARCHITECTURE.md`](../../notes/docs/NOTES-ARCHITECTURE.md)) for study guides and personal notes — same Core-loaded module as Studio, different Surfaces and context.
 
 ---
 
